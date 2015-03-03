@@ -21,5 +21,10 @@ class CLI
     printer.ending
   end
 
+  def get_input
+    input_stream.gets.chomp
+  end
+
+
 end
 
