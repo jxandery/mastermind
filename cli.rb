@@ -41,5 +41,9 @@ class CLI
     end
   end
 
+  def play?
+    command == "p" || command == "play"
+  end
+
 end
 
