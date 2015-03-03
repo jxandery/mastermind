@@ -13,12 +13,6 @@ class Printer
     "Enter your command"
   end
 
-  def game_instructions
-    "Not sure what to put here yet"
-  end
-
-
-
   def game_intro
     puts "Game started"
     puts "What's your guess?"
@@ -31,8 +25,6 @@ class Printer
   def guess_request
     print "Enter your guess"
   end
-
-
 
   def feedback
     "'#{@guess}' has #{@correct_elements} of the correct elements with #{@correct_position} in the correct positions. \nYou've taken #{number_of_guesses}."

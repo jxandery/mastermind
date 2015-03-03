@@ -29,5 +29,14 @@ class CLI
     printer.introduction
   end
 
+  def process_initial_commands
+    case
+    when play?
+      game = Game.new(printer)
+      game.play
+    when instructions?
+      printer.program_instructions
+  end
+
 end
 
