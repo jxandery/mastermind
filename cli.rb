@@ -36,6 +36,9 @@ class CLI
       game.play
     when instructions?
       printer.program_instructions
+    else
+      printer.not_a_valid_command
+    end
   end
 
 end
