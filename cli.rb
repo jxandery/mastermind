@@ -48,5 +48,10 @@ class CLI
   def instructions?
     command == "i" || command == "instructions"
   end
+
+  def finished?
+    command == "q" || command == "quit"
+  end
+
 end
 
