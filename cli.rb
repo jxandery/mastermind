@@ -12,7 +12,7 @@ class CLI
   end
 
   def start
-    printer.introduction
+    print_instructions
     until finished?
       printer.command_request
       @command = get_input
@@ -25,6 +25,9 @@ class CLI
     input_stream.gets.chomp
   end
 
+  def print_instructions
+    printer.introduction
+  end
 
 end
 
