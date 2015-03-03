@@ -15,7 +15,7 @@ class CLI
     print_instructions
     until finished?
       printer.command_request
-      @command = get_input
+      @command = get_input.downcase
       process_initial_commands
     end
     printer.ending
@@ -45,5 +45,8 @@ class CLI
     command == "p" || command == "play"
   end
 
+  def instructions?
+    command == "i" || command == "instructions"
+  end
 end
 
